@@ -8,9 +8,9 @@ Speech recognition using Google Speech API.
 Text Preprocessing using NLP.
 Dictionary based Machine Translation.
 
-To run the application.
+To run the application.  
 
-`cd Existing-SL`
-`python main.py`
-Click on Live Voice, record, wait for the output.
+`cd Existing-SL`  
+`python main.py`  
+Click on Live Voice, record, wait for the output.  
 To exit the application using speech, say `goodbye`.
