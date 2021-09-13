@@ -1,4 +1,6 @@
 ## Steps to run:  
 
 `npm install`  
-`npm start`
+`npm start`  
+
+Deployed on: https://slquiz.netlify.app/
