@@ -53,16 +53,21 @@ function App() {
       const obj = await net.executeAsync(expanded)
       console.log(obj)
 
-      const boxes = await obj[1].array()
-      const classes = await obj[2].array()
-      const scores = await obj[4].array()
+//       const boxes = await obj[1].array()
+//       const classes = await obj[2].array()
+//       const scores = await obj[4].array()
+      
+      const boxes = await obj[3].array()
+      const classes = await obj[1].array()
+      const scores = await obj[5].array()
+      
       
       // Draw mesh
       const ctx = canvasRef.current.getContext("2d");
 
       // 5. TODO - Update drawing utility
       // drawSomething(obj, ctx)  
-      requestAnimationFrame(()=>{drawRect(boxes[0], classes[0], scores[0], 0.8, videoWidth, videoHeight, ctx)}); 
+      requestAnimationFrame(()=>{drawRect(boxes[0], classes[0], scores[0], 0.5, videoWidth, videoHeight, ctx)}); 
 
       tf.dispose(img)
       tf.dispose(resized)
